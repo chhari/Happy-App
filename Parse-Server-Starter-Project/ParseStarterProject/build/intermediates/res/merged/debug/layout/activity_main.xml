@@ -19,9 +19,27 @@
 
 
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:scrollbars="vertical"
-    android:id="@+id/tvLatlong"/>
+    <TextView
+        android:id="@+id/latitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textIsSelectable="true" />
+
+    <ListView
+        android:id="@+id/requestListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/latitude_text"
+        android:layout_toRightOf="@+id/latitude_text" />
 </RelativeLayout>
